@@ -1,0 +1,523 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+/*
+Medidas
+
+Relativa: Tamaño visible de la pantalla
+--%
+--viewport-- vh---vw
+
+Absolutas: No cambian
+-px 
+-mm
+
+
+
+
+*/
+ul{
+  list-style: none;
+
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.main-header{
+  background: linear-gradient(83.1deg, rgba(154, 46, 52, 0) -0.08%, #C87B4D 93.59%),url('../assets/banner.jpg'),no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center,center;
+  color: white;
+  padding: 25px 40px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header nav{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.main-header nav ul {
+  margin-left: 500px;
+}
+.main-header nav ul li {
+  margin-left: 50px;
+}
+.main-header nav ul li a{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+.main-header .inputBuscar{
+
+  display: inline-block;
+  background-image:url('../assets/icons/search-icon.svg') ;
+  background-repeat: no-repeat;
+  background-position:left;
+  outline:none;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  width: 124px;
+  height: 40px;
+  background-color: transparent;
+  margin-top: -10px;
+
+}
+
+.main-header .inputBuscar::placeholder{
+  padding-left: 50px;
+  color: #FFFFFF;
+  font-family: Raleway;
+  font-style: normal;
+  font-size: 14px;
+  
+}
+
+.main-header .inputBuscar:focus{
+  padding-left: 40px;
+  color: #FFFFFF;
+  font-family: Raleway;
+  font-style: normal;
+  font-size: 14px;
+
+
+}
+
+
+.main-header nav ul{
+ display: flex;
+ width: 40%;
+ justify-content: space-between;
+ 
+}
+
+.main-header .header-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 300px;
+}
+
+.main-header .header-center h1{
+  margin: 20px 0;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 72px;
+  color: #F0D3B5;
+  text-align: center;
+
+}
+
+.main-header .header-center p{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F0D3B5;
+  text-align: center;
+
+}
+.main-header .header-center p em{
+  font-family: Raleway;
+  font-style:normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F5CC6A;
+  text-align: center;
+
+}
+
+
+
+.main-header .header-center img{
+  margin: 20px 0;
+}
+
+.main-header .header-end{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header .header-end .btnNominados{
+  display: inline-block;
+  background: #F2994A;
+  border-radius: 100px;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  padding: 10px 10px;
+}
+.main-header .header-end .btnVotar{
+  display: inline-block;
+  border: solid;
+  border-radius: 100px;
+  border: 1px solid #F2994A;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  padding: 10px 10px;
+}
+.main-header .header-end div ul li{
+  display: inline-block;
+}
+
+.main-header .header-end div a{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #F0D3B5;
+}
+
+.main-header .header-end .imgArrow{
+  margin-bottom: -5px;
+  width:20px;
+  height:20px;
+}
+
+/*------------------MAIN-------------------------*/
+
+.main-flex{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.sectionTitle{
+margin-top: 40px;
+margin-left: 50px;
+}
+
+.sectionTitle h2{
+
+font-family: Raleway;
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 24px;
+color: #C87B4D;
+}
+.sectionTitle p{
+
+margin-top: 27px;
+font-family: Raleway;
+font-style: normal;
+font-weight:normal;
+font-size: 18px;
+line-height: 24px;
+color: #C87B4D;
+}
+
+.sectionTitle p em{
+
+margin-top: 27px;
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+color: #C87B4D;
+}
+
+
+.main-section{
+  display: flex;
+  flex-direction: column;
+}
+.divTop-Flex{
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+
+
+
+
+.divInfo-Flex{
+  padding-right:8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0 20px;
+  margin-bottom: 40px;
+  
+}
+.divInfo-Flex p{
+  
+ white-space: pre;
+}
+
+
+.divInfo2{
+  padding-right:8px;
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  
+}
+
+.divInfo2 p{
+  margin-left: -50px;
+  font-family: Raleway;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+color: #221413;
+}
+
+.divInfo2 p em{
+
+  font-family: Raleway;
+font-style: normal;
+font-weight:bold;
+font-size: 14px;
+color: #221413;
+}
+.divInfo2 img{
+  margin-top: -14px;
+}
+
+a.dev{
+  background: #F2994A;
+  display: inline-block;
+  font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+padding: 5px 5px;
+text-align: center;
+font-size: 12px;
+width: 54px;
+height: 24px;
+border-radius: 16px;
+}
+a.mvp{
+  background: #221413;
+  display: inline-block;
+  font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+padding: 5px 5px;
+text-align: center;
+font-size: 12px;
+width: 54px;
+height: 24px;
+border-radius: 16px;
+}
+a.uxui{
+  background: #F5CC6A;
+  display: inline-block;
+  font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+padding: 5px 5px;
+text-align: center;
+font-size: 12px;
+width: 54px;
+height: 24px;
+border-radius: 16px;
+}
+
+
+
+/*----CLASES GENERALES PARA SU REUTILIZACION*/
+
+
+.mainArticle-Flex{
+  display: flex;
+  flex-direction: column;
+ 
+  border-radius: 8px;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.12);
+  margin-left: 80px;
+  margin-right: 100px;
+
+}
+
+.main-flex .main-section .divTop-Flex .mainArticle-Flex img.imgProject{
+ 
+  border-radius: 8px;
+  
+}
+
+.main-flex .main-section .divTop-Flex .mainArticle-Flex .projectTitle {
+  font-family: Raleway;
+font-style: normal;
+
+font-weight: 600px;
+font-size: 14px;
+color: #221413;
+margin: 20px 20px;
+}
+.main-flex .main-section .divTop-Flex .mainArticle-Flex .divInfo-Flex div p{
+  width: 127px;
+height: 16px;
+text-align: end;
+margin-bottom: 30px;
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+color: #221413;
+}
+
+
+/*-------------------FOOTER-----------------*/
+
+.footer-flex{
+  display: flex;
+  flex-direction: column;
+  background-color:#C87B4D;
+  padding: 25px;
+}
+
+.footerSocialMedia{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  
+}
+.footer-flex .footerSocialMedia ul li{
+  display: inline-block;
+  margin-left: 15px;
+
+}
+
+.footer-flex .footerSocialMedia p{
+  font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+text-align: right;
+
+color: #FFFFFF;
+
+}
+
+.footer-flex .poweredBy p{
+  text-align: center;
+  font-family: Raleway;
+  font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+
+color: #FFFFFF;
+}
+
+.footer-flex .footerSocialMedia a{
+  width: 68px;
+height: 16px;
+left: 32px;
+top: 1880px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+
+color: #FFFFFF;
+}
+.footer-flex .footerSocialMedia a em{
+  width: 68px;
+height: 16px;
+left: 32px;
+top: 1880px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight:normal;
+font-size: 14px;
+
+color: #FFFFFF;
+}
+.footer-flex .poweredBy p em{
+ 
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+
+color: #FFFFFF;
+}
+
+/*-----------------------EFECTOS HOVER----------------*/
+
+
+
+
+
+.imgHover{
+  position: relative;
+}
+.projectInfo-Hover{
+  visibility: hidden;
+  width: 424px;
+height: 367px;
+  background: linear-gradient(180deg, rgba(34, 20, 19, 0.64) 0%, rgba(19, 20, 34, 0.88) 100%);
+border-radius: 8px 8px 0px 0px;
+
+  position:absolute;
+  padding: 15px 15px;
+}
+
+.projectInfo-Hover nav ul li{
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.projectInfo-Hover h9{
+  font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+color: #FFFFFF;
+}
+
+.projectInfo-Hover p{
+  margin-top: 15px;
+  font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+/* Secondary/white-900 */
+
+color: #FFFFFF;
+margin-bottom: 70px;
+}
+
+.projectInfo-Hover .imgLike{
+  margin-left: 360px;
+}
+
+div.imgHover:hover div.projectInfo-Hover{
+  visibility: visible;
+}
