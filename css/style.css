@@ -472,7 +472,7 @@ color: #FFFFFF;
 
 
 
-.imgHover{
+.imgRelative{
   position: relative;
 }
 .projectInfo-Hover{
@@ -518,6 +518,6 @@ margin-bottom: 70px;
   margin-left: 360px;
 }
 
-div.imgHover:hover div.projectInfo-Hover{
+.imgProject:hover div.projectInfo-Hover{
   visibility: visible;
 }
